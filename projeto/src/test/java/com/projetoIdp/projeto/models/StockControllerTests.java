@@ -30,8 +30,8 @@ public class StockControllerTests {
   public void BeforeEach() {
     MockitoAnnotations.initMocks(this);
     this.stockController = new StockController();
-    this.stock = new Stock();
-    this.stockForm = new StockForm();
+    // this.stock = new Stock();
+    // this.stockForm = new StockForm();
   }
 
   @Test
@@ -42,6 +42,17 @@ public class StockControllerTests {
     Assert.assertEquals(stock.getId(), "petr4");
     Assert.assertEquals(stock.getDescription(), "Petrobras PN");
   }
+
+  // @Test
+  // public void shouldCreateStock() {
+
+  // StockForm form = new StockForm("mglu3", "MagazineLuiza");
+  // ResponseEntity<Stock> createdStockResponse =
+  // stockController.createStock(form);
+  // Stock stock = createdStockResponse.getBody();
+
+  // Assert.assertNotEquals(stock, null);
+  // }
 
   // @Test
   // public void shouldNotGetStock() {
